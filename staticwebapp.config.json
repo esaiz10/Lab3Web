@@ -1,0 +1,27 @@
+{
+    "auth": {
+        "platform": {
+            "enable": true
+             }
+        },
+        "routes":[
+            {
+            "route":"/",
+            "serve":"/index.html"
+        },
+        {
+            "route": "/authenticated/*",
+            "allowedRoles": ["authenticated"]
+
+        },
+        {
+            "route":"/admin/*",
+            "allowedRoles": ["admin"]
+        }
+    ],
+    "nagivationFallback": {
+        "rewrite":"/index.html",
+        "exclude": ["/static/*","/api/*"]
+    }
+
+}
