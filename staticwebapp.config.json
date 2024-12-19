@@ -19,7 +19,7 @@
             "allowedRoles": ["admin"]
         }
     ],
-    "nagivationFallback": {
+    "navigationFallback": {
         "rewrite":"/index.html",
         "exclude": ["/static/*","/api/*"]
     }
